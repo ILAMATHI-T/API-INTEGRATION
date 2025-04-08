@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Live Weather</h1>
+    
+    <input type="text" id="cityInput" placeholder="Enter city name" />
+    <button onclick="getCityWeather()">Search City</button>
+    
+    <button id="toggleUnit">Switch to °F</button>
+
+    <p id="location">Getting location...</p>
+    <img id="weatherIcon" src="" alt="Weather Icon" style="width:100px; display:none;" />
+    <p id="temperature"></p>
+    <p id="weather"></p>
+    <p id="humidity"></p>
+    <p id="time">Last updated: --</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
